@@ -82,12 +82,17 @@ nav a {
 
 /* aca comienza el cuerpo de la pagina */
 
+a{
+  text-decoration: none;
+}
+
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   padding: 20px;
+  justify-content: flex-start;
+  margin-top: 200px;
 }
 
 .box {
@@ -127,6 +132,10 @@ nav a {
   color: #F2913D;
 }
 
+#color_box_2 p {
+  color: #F2913D;
+}
+
 #color_box_1 button {
   color: #F2913D;
   border-radius: 5px;
@@ -152,36 +161,69 @@ nav a {
   cursor: pointer;
 }
 
+#button_style_1{
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: #F2913D;
+  color: #0D0D0D;
+  height: 30px;
+  width: 130px;
+}
+
 .filter-item {
   display: none;
 }
 
 .filter-item.show {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
   border: 1px solid #ddd;
   padding: 20px;
   margin: 10px;
-  width: calc((100%) - 20px);
-  max-width: 300px;
-  min-width: 250px;
-  text-align: center;
   box-sizing: border-box;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   transition: all 0.3s ease-in-out;
+  width: 100%; /* Tamaño predefinido */
+  max-width: 900px;
+  min-width: 250px;
+  border-radius: 5px;
+  margin: 20px;
 }
 
-.container {
+.filter-item img{
+  border-radius: 5px;
+}
+
+.filter-item p {
   display: flex;
-  justify-content: flex-start;
+  margin-bottom: 10px; /* Espacio entre el párrafo y el botón */
+  width: 100%;
 }
 
-.container{
-  margin-top: 200px;
+.filter-item button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px; /* Botón ocupa todo el ancho */
+  width: 100px;
 }
+
+.filter-item a{
+  color: #0D0D0D;
+}
+
+#project_text{
+  width: 600px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#project_text h2 {
+  margin-top: 0%;
+  margin-bottom: 10px;
+}
+
 
 /* aca comienza el pie de la pagina */
 

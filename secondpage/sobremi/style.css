@@ -86,12 +86,21 @@ a{
   text-decoration: none;
 }
 
+.container h2{
+  color: #F2913D;
+}
+
+.container p {
+  color: #F2913D;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  padding-top: 100px;
 }
 
 .box {
@@ -166,6 +175,16 @@ a{
   cursor: pointer;
 }
 
+
+.socialnetwork {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.socialnetwork h2 {
+  color: #F2913D;
+}
 
 /* aca comienza el pie de la pagina */
 

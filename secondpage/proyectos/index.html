@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Inicio</title>
+    <title>Proyectos</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
 				<ul>
 					<li><a href="../../index.html" class="scale-up-center">Inicio</a></li>
 					<li><a href="#" class="scale-up-center">Proyectos</a></li>
-					<li><a href="#" class="scale-up-center">Sobre mí</a></li>
+					<li><a href="../sobremi/index.html" class="scale-up-center">Sobre mí</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -28,21 +28,74 @@
 
 	<div class="container">
 		<div id="filter-buttons">
-			<button class="filter-button" data-filter="all">Mostrar todos</button>
-			<button class="filter-button" data-filter="red">Rojo</button>
-			<button class="filter-button" data-filter="green">Verde</button>
-			<button class="filter-button" data-filter="blue">Azul</button>
+			<button class="filter-button" data-filter="all" id="button_style_1">Mostrar todos</button>
+			<button class="filter-button" data-filter="vr" id="button_style_1">VR</button>
+			<button class="filter-button" data-filter="cs" id="button_style_1">C#</button>
+			<button class="filter-button" data-filter="unity" id="button_style_1">Unity</button>
+			<button class="filter-button" data-filter="blender" id="button_style_1">Blender</button>
+			<button class="filter-button" data-filter="gestion" id="button_style_1">Gestión</button>
 		  </div>
-		  
-		  <div id="filter-items">
-			
-			<div class="filter-item red"><img src="../../img/proyectos/actinspace.png" alt=""> Elemento rojo <button>Leer Más</button></div>
-			<div class="filter-item green">Elemento verde</div>
-			<div class="filter-item blue">Elemento azul</div>
-			<div class="filter-item red">Otro elemento rojo</div>
-			<div class="filter-item green">Otro elemento verde</div>
-			<div class="filter-item blue">Otro elemento azul</div>
+		  <div id="filter-buttons">
+			<button class="filter-button" data-filter="figma" id="button_style_1">Figma</button>
+			<button class="filter-button" data-filter="ps" id="button_style_1">Photoshop</button>
 		  </div>
+		<div id="filter-items">
+			<div class="filter-item gestion ps unity blender figma show" id="color_box_2">
+				<img src="../../img/proyectos/nostalgia.png" alt="">
+				<div id="project_text">
+					<h2>Memorias</h2>
+					<p>Proyecto audiovisual interactivo con el objetivo de enseñar que pasa en la mente de una persona con Alzheimer</p>
+				</div>
+				<button><a href="https://memoriasdenostalgi.wixsite.com/portafolio-memorias">Ver Más</a></button>
+			</div>
+			<div class="filter-item ps unity blender show" id="color_box_2">
+				<img src="../../img/proyectos/gatos.png" alt="">
+				<div id="project_text">
+					<h2>Gatos callejeros</h2>
+					<p>Juego en el cual busca mostrar la problemática de los gatos callejeros.</p>
+				</div>
+				<button><a href="https://github.com/patopaco078/gatos-callejeros">Ver Más</a></button>
+			</div>
+			<div class="filter-item gestion ps show" id="color_box_2">
+				<img src="../../img/proyectos/actinspace.png" alt="">
+				<div id="project_text">
+					<h2>Hackaton ActinSpace</h2>
+					<p>En 24 horas tuvimos que presentar un pitch de un modelo de negocio el cual resolviera alguno de los problemas. En nuestro caso tuvimos que resolver cómo hacer para que los satélites no se estrellen con objetos no identificados de menos de 1 cm.</p>
+				</div>
+			</div>
+			<div class="filter-item cs show" id="color_box_2">
+				<img src="../../img/proyectos/3dproject.png" alt="">
+				<div id="project_text">
+					<h2>3D Solo en consola</h2>
+					<p>plataforma 3d en la cual te puedes mover y ver a en 3 dimensiones los objetos en escena.</p>
+				</div>
+				<button><a href="https://github.com/patopaco078/3D_C_sharp">Ver Más</a></button>
+			</div>
+			<div class="filter-item unity ps show" id="color_box_2">
+				<img src="../../img/proyectos/hunterthewitch.png" alt="">
+				<div id="project_text">
+					<h2>Hunt The Wirch</h2>
+					<p>Juego de terror hecho en solo 4 días.</p>
+				</div>
+				<button><a href="https://github.com/patopaco078/Hunthewhitchs">Ver Más</a></button>
+			</div>
+			<div class="filter-item vr unity blender show" id="color_box_2">
+				<img src="../../img/proyectos/vrinmueble.png" alt="">
+				<div id="project_text">
+					<h2>VR Exploración de inmueble</h2>
+					<p>Plataforma en la que se explora a través de VR un inmueble.</p>
+				</div>
+				<button><a href="https://github.com/patopaco078/property-demo">Ver Más</a></button>
+			</div>
+			<div class="filter-item ps blender show" id="color_box_2">
+				<img src="../../img/proyectos/gorigogo.png" alt="">
+				<div id="project_text">
+					<h2>3D Escuela de verano</h2>
+					<p>Aprendí mucho sobre cómo se utilizan varias herramientas de texturizado.</p>
+				</div>
+				<button><a href="https://www.youtube.com/watch?v=3x8hG8eewu0&ab_channel=UPBColombia">Ver Más</a></button>
+			</div>
+		</div>
 					
 	</div>
 	<script src="script.js"></script>
